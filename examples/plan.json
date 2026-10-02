@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "goal": "Run the Proofrail test suite and require its actual process exit code to be zero",
+  "created_utc": "2026-10-02T12:55:14.044322+00:00",
+  "checks": [
+    {
+      "kind": "command",
+      "name": "Unit test suite",
+      "argv": [
+        "python",
+        "-m",
+        "unittest",
+        "-v",
+        "test_proofrail"
+      ],
+      "cwd": "..",
+      "timeout_seconds": 60.0
+    }
+  ]
+}
